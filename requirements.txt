@@ -1,0 +1,34 @@
+# Install torch==2.3.1 and torchvision==0.18.1 using the matching CUDA wheels first.
+# Validated Python 3.10 / CUDA 12.1 environment. One transformers pin, no duplicates.
+numpy==1.26.4
+einops==0.8.1
+transformers==4.55.0
+qwen-vl-utils==0.0.10
+safetensors==0.4.5
+pillow==11.1.0
+accelerate==0.34.2
+diffusers==0.32.2
+ftfy==6.1.1
+opencv-python==4.8.1.78
+bitsandbytes==0.45.5
+lion-pytorch==0.0.6
+schedulefree==1.4
+pytorch-optimizer==3.5.0
+prodigy-plus-schedule-free==1.9.0
+prodigyopt==1.1.2
+tensorboard
+altair==4.2.2
+easygui==0.98.3
+toml==0.10.2
+voluptuous==0.13.1
+huggingface-hub==0.36.1
+imagesize==1.4.1
+rich==13.9.4
+sentencepiece==0.2.0
+matplotlib==3.9.0
+imagecorruptions==1.1.2
+scipy==1.13.0
+h5py==3.16.0
+packaging
+tqdm
+# Optional accelerator: flash-attn==2.7.2.post1 (install separately for your CUDA/PyTorch).

@@ -1,0 +1,19 @@
+OpenDepth research code
+Copyright 2026 OpenDepth Authors
+
+This source release is derived from the authors' modified Step1X-Edit checkout,
+whose upstream Git base is e2261a2fc10dfe1ca5e54496e4319d588576e701.
+Upstream: https://github.com/stepfun-ai/Step1X-Edit (Apache-2.0).
+
+Backbone and training utilities retain the upstream implementation and existing
+copyright notices, including Black Forest Labs/FLUX and Kohya sd-scripts code.
+The Qwen model and pretrained Step1X-Edit weights are obtained separately and
+are not included in this repository.
+
+library/jpeg_xl_util.py is derived from Fraetor/jxl_decode (MIT).
+Its original license is included in THIRD_PARTY_LICENSES/jxl_decode-MIT.txt.
+
+Changes in this release: robust discriminative training with feature alignment
+and RGB reconstruction; standalone depth inference without the editing demo;
+portable train/infer/evaluate entry points; removal of host-specific launchers
+and unconditional NumPy monkey patches. The upstream LICENSE is retained.

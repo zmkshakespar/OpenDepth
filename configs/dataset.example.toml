@@ -1,0 +1,36 @@
+[general]
+shuffle_caption = false
+caption_extension = ".txt"
+keep_tokens = 1
+
+# Paths are relative to the repository root. Metadata keys identify target
+# disparity images; each value supplies ref_image_path and an empty caption.
+[[datasets]]
+resolution = [768, 576]
+batch_size = 1
+edit_dataset = true
+enable_bucket = false
+  [[datasets.subsets]]
+  image_dir = "."
+  metadata_file = "data/hypersim.json"
+  num_repeats = 1
+
+[[datasets]]
+resolution = [1216, 352]
+batch_size = 1
+edit_dataset = true
+enable_bucket = false
+  [[datasets.subsets]]
+  image_dir = "."
+  metadata_file = "data/vkitti.json"
+  num_repeats = 1
+
+[[datasets]]
+resolution = [1024, 512]
+batch_size = 1
+edit_dataset = true
+enable_bucket = false
+  [[datasets.subsets]]
+  image_dir = "."
+  metadata_file = "data/cityscapes.json"
+  num_repeats = 1
